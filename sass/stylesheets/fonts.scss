@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'stratos-bold';
+	src: url('/fonts/stratos-bold.otf');
+	src: local('☺'), url('/fonts/stratos-bold.otf') format('otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	font-family: 'stratos-bold';
+}
