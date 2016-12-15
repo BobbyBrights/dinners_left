@@ -1,6 +1,42 @@
 include header
 
 	section.container
-		section.container__inner
-		
-			section.scene		
+		section.container__inner.inner_container
+			section.scene
+				section.title
+					h1.
+						How many meals do I have left?
+				section.counter
+					section.counter__item
+						p.counter__item_1
+							img(src="../imgs/food/food_5.png" class="food_item")
+					section.counter__item
+						p.counter__item_2
+							img(src="../imgs/food/food_4.png" class="food_item")
+					section.counter__item
+						p.counter__item_3
+							img(src="../imgs/food/food_3.png" class="food_item")
+					section.counter__item
+						p.counter__item_4
+							img(src="../imgs/food/food_1.png" class="food_item")
+					section.counter__item
+						p.counter__item_5
+							img(src="../imgs/food/food_2.png" class="food_item")
+				section.input
+					form.date_form
+						section.date_input
+						section.gender_input
+							label(for="m_radio") M
+							input(id="m_radio" type="radio" name="gender" value="M" required)
+							label(for="f_radio") F
+							input(id="f_radio" type="radio" name="gender" value="F")
+						input(type="submit" value="Enter" class="date_submit")
+						
+				section.endline
+					h2.
+						Life’s Short. <span class="second_part">Eat Awesome.</span>
+					div.button.button__refresh
+						p Refresh
+			
+		section.container__footer.inner_container
+			img(src="../imgs/deliveroo_logo.png")
