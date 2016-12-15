@@ -129,6 +129,8 @@ section {
 			}
 			
 			.input {
+				min-height: 91px;
+				
 				form {
 					.date_input, .gender_input {
 						display: inline-flex;
@@ -226,6 +228,8 @@ section {
 					background-color: $first-color;
 					display: inline-flex;
 					cursor: pointer;
+					
+					opacity: 0;
 					
 					p {
 						font-size: $header-font-size * 0.75;

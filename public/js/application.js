@@ -81,6 +81,7 @@ $(document).ready(function(){
 		$('.endline').fadeOut(300, function(){
 		    $('.input').fadeIn(400, function() {
 			    $('.second_part').css('opacity', 0);
+			    $('.button__refresh').css('opacity', 0);
 		    });
 	    });
 	});
@@ -143,9 +144,11 @@ function ticker() {
     }
     
     if (count == 60) {
-	    $('.input').delay(800).fadeOut(300, function(){
+	    $('.input').delay(1000).fadeOut(300, function(){
 		    $('.endline').fadeIn(500, function(){
-			    $('.second_part').delay(400).fadeTo(300, 1);
+			    $('.second_part').delay(600).fadeTo(300, 1, function() {
+				    $('.button__refresh').delay(1500).fadeTo(300, 1);
+			    });
 		    });
 	    });
     }
