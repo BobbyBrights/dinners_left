@@ -46,7 +46,7 @@ module.exports = function(app) {
   		}
   		
   		var years_left = expectancy - age;
-  		var meals_left = years_left * 365;
+  		var meals_left = years_left * 365 * 3;
 		
 		res.setHeader('Content-Type', 'application/json');
 		res.send(JSON.stringify({ meals_left: meals_left }));
